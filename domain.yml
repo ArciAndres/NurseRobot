@@ -1,0 +1,53 @@
+%YAML 1.1
+---
+actions:
+- utter_standby
+- utter_greet
+- utter_reach
+- action_weather
+- utter_thanks
+- action_joke
+- utter_ask_location
+entities:
+- location
+- object
+intents:
+- reach
+- thanks
+- greet
+- attention
+- goodbye
+- deny
+- joke
+- weather
+slots:
+  location:
+    type: text
+  object:
+    type: text
+templates:
+  utter_ask_location:
+  - text: In what location?
+  utter_attention:
+  - text: Yes, How can I help you?
+  - text: Yes, tell me. How can I be useful?
+  - text: I'm here. What can I do for you?
+  utter_greet:
+  - text: Hello! How can I help you.
+  - text: Hi human! You can call me Nurse. I'm at your service.
+  - text: Hello human! What can I do for you?.
+  - text: Greetings. my name is Nurse. How may I help you?
+  - text: Hi human, do you need anything?
+  utter_reach:
+  - text: Sure! Here it is.
+  - text: Of course! There you go.
+  - text: Absolutely. Here it is.
+  utter_standby:
+  - text: I'll be here if you need me.
+  - text: Let me know if you need anything.
+  - text: I'm at your service.
+  - text: Call me if you need anything
+  utter_thanks:
+  - text: My pleasure.
+  - text: You're welcome.
+  - text: Anytime!

@@ -1,0 +1,27 @@
+{
+  "states": [
+    "intent_attention",
+    "intent_deny",
+    "intent_goodbye",
+    "intent_greet",
+    "intent_joke",
+    "intent_reach",
+    "intent_thanks",
+    "intent_weather",
+    "entity_object",
+    "entity_location",
+    "slot_location_0",
+    "slot_object_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_action_deactivate_form",
+    "prev_utter_thanks",
+    "prev_utter_greet",
+    "prev_utter_reach",
+    "prev_utter_standby",
+    "prev_utter_ask_location",
+    "prev_action_joke",
+    "prev_action_weather"
+  ]
+}

@@ -1,0 +1,70 @@
+%YAML 1.1
+---
+actions:
+- utter_thanks
+- utter_greet
+- utter_reach
+- utter_standby
+- utter_ask_location
+- action_joke
+- action_weather
+config:
+  store_entities_as_slots: true
+entities:
+- object
+- location
+forms: []
+intents:
+- attention:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- thanks:
+    use_entities: true
+- deny:
+    use_entities: true
+- joke:
+    use_entities: true
+- weather:
+    use_entities: true
+- reach:
+    use_entities: true
+slots:
+  location:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  object:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_anything_else:
+  - text: Do you need anything else?
+  - text: Can I do something else for you?
+  utter_ask_location:
+  - text: In what location?
+  utter_attention:
+  - text: Yes, How can I help you?
+  - text: Yes, tell me. How can I be useful?
+  - text: I'm here. What can I do for you?
+  utter_greet:
+  - text: Hello! You can call me Nurse. How can I help you?
+  - text: Hello human! You can call me Nurse. What can I do for you?.
+  - text: Greetings. You can call me Nurse. How may I help you?
+  - text: Hi human. You can call me Nurse. How may I help you?
+  utter_reach:
+  - text: Sure! Here it is.
+  - text: Of course! There you go.
+  - text: Absolutely. Here it is.
+  utter_standby:
+  - text: I'll be here if you need me.
+  - text: Let me know if you need anything.
+  - text: I'm at your service.
+  - text: Call me if you need anything
+  utter_thanks:
+  - text: 'My pleasure. '
+  - text: You're welcome.
+  - text: Anytime!

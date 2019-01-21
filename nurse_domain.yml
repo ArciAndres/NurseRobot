@@ -1,0 +1,63 @@
+intents:
+- attention
+- greet
+- goodbye
+- thanks
+- deny
+- joke
+- weather
+- reach
+
+entities:
+- object
+- location
+
+slots:
+  object:
+    type: text
+  location:
+    type: text
+
+actions:
+- utter_thanks
+- utter_greet
+- utter_reach
+- utter_standby
+- utter_ask_location
+- action_joke
+- action_weather
+
+templates:
+  utter_attention:
+  - text: "Yes, How can I help you?"
+  - text: "Yes, tell me. How can I be useful?"
+  - text: "I'm here. What can I do for you?"
+
+  utter_greet:
+  - text: "Hello! You can call me Nurse. How can I help you?"
+  - text: "Hello human! You can call me Nurse. What can I do for you?."
+  - text: "Greetings. You can call me Nurse. How may I help you?"
+  - text: "Hi human. You can call me Nurse. How may I help you?"
+  
+  utter_thanks:
+  - text: "My pleasure. "
+  - text: "You're welcome."
+  - text: "Anytime!"
+  
+  utter_standby:
+  - text: "I'll be here if you need me."
+  - text: "Let me know if you need anything."
+  - text: "I'm at your service."
+  - text: "Call me if you need anything"
+  
+  utter_reach:
+      - "Sure! Here it is."
+      - "Of course! There you go."
+      - "Absolutely. Here it is."
+
+  utter_ask_location:
+      - "In what location?"
+  
+  utter_anything_else:
+  - text: "Do you need anything else?"
+  - text: "Can I do something else for you?"

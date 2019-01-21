@@ -1,0 +1,613 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "goodbye",
+        "text": "Bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye bot"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye friend"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye for now"
+      },
+      {
+        "intent": "goodbye",
+        "text": "catch you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "gotta go"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodnight"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "goodbye",
+        "text": "i'm off"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later alligator"
+      },
+      {
+        "intent": "goodbye",
+        "text": "we'll speak soon"
+      },
+      {
+        "intent": "attention",
+        "text": "Nurse"
+      },
+      {
+        "intent": "attention",
+        "text": "Hey"
+      },
+      {
+        "intent": "attention",
+        "text": "Are you there?"
+      },
+      {
+        "intent": "attention",
+        "text": "hello is anybody there"
+      },
+      {
+        "intent": "attention",
+        "text": "Hey nurse"
+      },
+      {
+        "intent": "attention",
+        "text": "Hi nurse"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hi folks"
+      },
+      {
+        "intent": "greet",
+        "text": "hi Mister"
+      },
+      {
+        "intent": "greet",
+        "text": "hi pal!"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "greetings"
+      },
+      {
+        "intent": "greet",
+        "text": "hello everybody"
+      },
+      {
+        "intent": "greet",
+        "text": "hello robot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks nurse"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks bot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks for that"
+      },
+      {
+        "intent": "thanks",
+        "text": "cheers"
+      },
+      {
+        "intent": "thanks",
+        "text": "ok thanks!"
+      },
+      {
+        "intent": "thanks",
+        "text": "perfect thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks a bunch for everything"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks for the help"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks a lot"
+      },
+      {
+        "intent": "thanks",
+        "text": "amazing, thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool, thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool thank you"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "affirm",
+        "text": "for sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes yes yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "definitely"
+      },
+      {
+        "intent": "deny",
+        "text": "no"
+      },
+      {
+        "intent": "deny",
+        "text": "not at all"
+      },
+      {
+        "intent": "deny",
+        "text": "absolutely not"
+      },
+      {
+        "intent": "deny",
+        "text": "of course not"
+      },
+      {
+        "intent": "deny",
+        "text": "no thank you"
+      },
+      {
+        "intent": "deny",
+        "text": "no thanks"
+      },
+      {
+        "intent": "deny",
+        "text": "not for now."
+      },
+      {
+        "intent": "joke",
+        "text": "Can you tell me a joke?"
+      },
+      {
+        "intent": "joke",
+        "text": "I would like to hear a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "Tell me a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "A joke please"
+      },
+      {
+        "intent": "joke",
+        "text": "Tell me a joke please"
+      },
+      {
+        "intent": "joke",
+        "text": "I would like to hear a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "I would loke to hear a joke, please"
+      },
+      {
+        "intent": "joke",
+        "text": "Can you tell jokes?"
+      },
+      {
+        "intent": "joke",
+        "text": "Please tell me a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "I need to hear a joke"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "Berlin",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather in Berlin at the moment?()"
+      },
+      {
+        "intent": "weather",
+        "text": "What's the weather today?"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "London",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather in London today?"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "Paris",
+            "entity": "location"
+          }
+        ],
+        "text": "Show me what's the weather in Paris"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 32,
+            "end": 39,
+            "value": "Vilnius",
+            "entity": "location"
+          }
+        ],
+        "text": "I wonder what is the weather in Vilnius right now?"
+      },
+      {
+        "intent": "weather",
+        "text": "Tell me the weather"
+      },
+      {
+        "intent": "weather",
+        "text": "What's the weather"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "London",
+            "entity": "location"
+          }
+        ],
+        "text": "I am going to London today and I wonder what is the weather out there?"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 25,
+            "end": 34,
+            "value": "Amsterdam",
+            "entity": "location"
+          }
+        ],
+        "text": "I am planning my trip to Amsterdam. What is the weather out there?"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "Dublin",
+            "entity": "location"
+          }
+        ],
+        "text": "Show me the weather in Dublin, please"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Roma",
+            "entity": "location"
+          }
+        ],
+        "text": "Roma"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "Italy",
+            "entity": "location"
+          }
+        ],
+        "text": "The weather condition in Italy"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "book",
+            "entity": "object"
+          }
+        ],
+        "text": "Can you pass me the book, please"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "book",
+            "entity": "object"
+          }
+        ],
+        "text": "Can you pass me the book"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "remote",
+            "entity": "object"
+          }
+        ],
+        "text": "I need the remote"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "book",
+            "entity": "object"
+          }
+        ],
+        "text": "I need the book"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "cane",
+            "entity": "object"
+          }
+        ],
+        "text": "Can you reach my cane please"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "keys",
+            "entity": "object"
+          }
+        ],
+        "text": "Hold me my keys"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "phone",
+            "entity": "object"
+          }
+        ],
+        "text": "Give me my phone"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "phone",
+            "entity": "object"
+          }
+        ],
+        "text": "Hand me my phone"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "phone",
+            "entity": "object"
+          }
+        ],
+        "text": "Can you get me my phone"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "book",
+            "entity": "object"
+          }
+        ],
+        "text": "Can you get me the book, please"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "book",
+            "entity": "object"
+          }
+        ],
+        "text": "Pass me the book"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "cane",
+            "entity": "object"
+          }
+        ],
+        "text": "The cane, please"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "remote",
+            "entity": "object"
+          }
+        ],
+        "text": "The remote please"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "book",
+            "entity": "object"
+          }
+        ],
+        "text": "My book"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "phone",
+            "entity": "object"
+          }
+        ],
+        "text": "Pass me the phone"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "comb",
+            "entity": "object"
+          }
+        ],
+        "text": "Reach me the comb"
+      },
+      {
+        "intent": "reach",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "comb",
+            "entity": "object"
+          }
+        ],
+        "text": "Pass me the comb"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
