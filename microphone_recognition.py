@@ -30,7 +30,7 @@ except sr.RequestError as e:
     print("Could not request results from Google Speech Recognition service; {0}".format(e))
 
 # recognize speech using Google Cloud Speech
-GOOGLE_CLOUD_SPEECH_CREDENTIALS = "AIzaSyBnV-ozaacRGzeocr9EHXrfpofxY1KoH7M"
+GOOGLE_CLOUD_SPEECH_CREDENTIALS = ""
 try:
     print("Google Cloud Speech thinks you said " + r.recognize_google_cloud(audio))
 except sr.UnknownValueError:

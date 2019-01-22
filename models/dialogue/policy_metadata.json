@@ -3,54 +3,35 @@
     "action_listen": {
       "slots": [
         "object",
-        "location"
+        "place"
       ]
+    },
+    "utter_whereto": {
+      "slots": []
+    },
+    "utter_somethingelse": {
+      "slots": []
     },
     "utter_standby": {
-      "slots": [
-        "location"
-      ]
-    },
-    "utter_greet": {
-      "slots": [
-        "location"
-      ]
-    },
-    "action_weather": {
-      "slots": [
-        "location"
-      ]
-    },
-    "utter_reach": {
-      "slots": [
-        "location"
-      ]
+      "slots": []
     },
     "action_joke": {
-      "slots": [
-        "location"
-      ]
+      "slots": []
     },
-    "null": {
-      "slots": [
-        "location"
-      ]
+    "utter_reach": {
+      "slots": []
     },
-    "utter_ask_location": {
-      "slots": [
-        "location"
-      ]
+    "utter_attention": {
+      "slots": []
     },
-    "utter_thanks": {
-      "slots": [
-        "location"
-      ]
+    "utter_greet": {
+      "slots": []
     }
   },
   "rasa_core": "0.12.4",
   "python": "3.6.6",
   "max_histories": [
-    2,
+    5,
     3
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
@@ -58,5 +39,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20190109-111532"
+  "trained_at": "20190122-162437"
 }

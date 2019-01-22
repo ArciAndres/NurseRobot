@@ -1,31 +1,35 @@
 intents:
-- attention
-- greet
-- goodbye
+- reach
 - thanks
+- greet
+- attention
+- goodbye
 - deny
 - joke
-- weather
-- reach
+- affirm
+- take
+- move
 
 entities:
 - object
-- location
+- place
 
 slots:
   object:
     type: text
-  location:
+  place:
     type: text
 
 actions:
-- utter_thanks
+- utter_standby
 - utter_greet
 - utter_reach
-- utter_standby
-- utter_ask_location
+- utter_thanks
 - action_joke
-- action_weather
+- utter_somethingelse
+- utter_attention
+- utter_move
+- utter_whereto
 
 templates:
   utter_attention:
@@ -54,10 +58,16 @@ templates:
       - "Sure! Here it is."
       - "Of course! There you go."
       - "Absolutely. Here it is."
-
-  utter_ask_location:
-      - "In what location?"
   
-  utter_anything_else:
-  - text: "Do you need anything else?"
-  - text: "Can I do something else for you?"
+  utter_somethingelse:
+  - text: Do you need anything else?
+  - text: Can I do something else for you?
+  - text: Is there something else I can do for you?
+
+  utter_whereto:
+  - text: Where?
+
+  utter_move:
+  - text: Ok, let's go.
+  - text: Sure, let me help you.
+  - text: Sure, let's go.

@@ -1,27 +1,31 @@
 {
   "states": [
+    "intent_affirm",
     "intent_attention",
     "intent_deny",
     "intent_goodbye",
     "intent_greet",
     "intent_joke",
+    "intent_move",
     "intent_reach",
+    "intent_take",
     "intent_thanks",
-    "intent_weather",
     "entity_object",
-    "entity_location",
-    "slot_location_0",
+    "entity_place",
     "slot_object_0",
+    "slot_place_0",
     "prev_action_listen",
     "prev_action_restart",
     "prev_action_default_fallback",
     "prev_action_deactivate_form",
-    "prev_utter_thanks",
+    "prev_utter_standby",
     "prev_utter_greet",
     "prev_utter_reach",
-    "prev_utter_standby",
-    "prev_utter_ask_location",
+    "prev_utter_thanks",
     "prev_action_joke",
-    "prev_action_weather"
+    "prev_utter_somethingelse",
+    "prev_utter_attention",
+    "prev_utter_move",
+    "prev_utter_whereto"
   ]
 }

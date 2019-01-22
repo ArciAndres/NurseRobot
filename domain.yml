@@ -7,10 +7,17 @@ actions:
 - action_weather
 - utter_thanks
 - action_joke
+- utter_somethingelse
+- utter_takesomewhere
+- utter_attention
 - utter_ask_location
+
+
 entities:
 - location
 - object
+- place
+
 intents:
 - reach
 - thanks
@@ -20,11 +27,15 @@ intents:
 - deny
 - joke
 - weather
+- affirm
+- take
+
 slots:
   location:
     type: text
   object:
     type: text
+    
 templates:
   utter_ask_location:
   - text: In what location?
@@ -51,3 +62,9 @@ templates:
   - text: My pleasure.
   - text: You're welcome.
   - text: Anytime!
+  - text: Glad I could help!
+  utter_somethingelse:
+  - text: Do you need anything else?
+  - text: Can I do something else for you?
+  - text: Is that all?
+  - text: Is there something else I could do for you?

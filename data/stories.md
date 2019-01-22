@@ -9,138 +9,128 @@
 ## story_thanks
 * thanks
  - utter_thanks
+ - utter_somethingelse
+ 
 
-## story_joke_01
+ ## story_joke1
+* joke
+ - action_joke
+* goodbye
+ - utter_standby
+
+ ## story_joke2
+* joke
+ - action_joke
+* goodbye
+ - utter_standby
+
+ ## story_joke3
 * joke
  - action_joke
  
-## story_joke_02
+ ## story_joke4
 * greet
  - utter_greet
 * joke
  - action_joke
 * thanks
  - utter_thanks
-* goodbye
+ - utter_somethingelse
+* deny
  - utter_standby 
- 
-## story_no_location
-* weather[location=London]
- - action_weather
 
-## story_weather
-* weather
- - utter_ask_location
- 
-## story_reach
+
+
+## story_reach1
 * reach
  - utter_reach
  
 ## story_reach2
 * greet 
  - utter_greet
-* reach
+* reach[object=phone]
+ - slot{"object":"phone"}
  - utter_reach
-   
-## Generated Story -4810690617737677043
+
+ ## story_reach3
+* reach[object=cane]
+ - slot{"object":"cane"}
+ - utter_reach
+* goodbye
+ - utter_standby
+
+ ## story_reach4
+ * reach[object=remote]
+ - slot{"object":"remote"}
+ - utter_reach
+
+ ## story_reach5
+ * reach[object=remote]
+ - slot{"object":"remote"}
+ - utter_reach
+
+
+ ## story_move1
+ * move[place=bedroom]
+ - slot{"place":"bedroom"}
+ - utter_move
+ - utter_somethingelse
+ 
+## story_move2
 * greet
-    - utter_greet
-* reach{"object": "phone"}
-    - slot{"object": "phone"}
-    - utter_reach
+ - utter_greet
+* move
+ - utter_whereto
+
+## story_move3
+* move
+ - utter_whereto
+
+## story_move4
+* attention
+ - utter_attention
+* move 
+ - utter_whereto
+* move[place=bathroom]
+ - slot{"place":"bathroom"}
+ - utter_move
+ - utter_somethingelse
 * thanks
-    - utter_thanks
-    - utter_standby
-    
-## Generated Story 3320800183399695936
-* greet
-    - utter_greet
-* weather
-    - utter_ask_location
-* weather{"location": "italy"}
-    - slot{"location": "italy"}
-    - action_weather
-    - slot{"location": "italy"}
-* goodbye
-    - utter_standby
-    - export
-## Generated Story -3351152636827275381
-* greet
-    - utter_greet
-* weather[location=London]
-    - slot{"location": "London"}
-    - action_weather
-* goodbye
-    - utter_standby
-    - export
-## Generated Story 8921121480760034253
-* greet
-    - utter_greet
-* weather
-    - utter_ask_location
-* weather[location=London]
-    - slot{"location": "London"}
-    - action_weather
-* goodbye
-    - utter_standby
-    - export
-## Generated Story -5208991511085841103
-    - slot{"location": "London"}
-    - action_weather
-* goodbye
-    - utter_standby
-    - export
-## Generated Story -5208991511085841103
-    - slot{"location": "London"}
-    - action_weather
-* goodbye
-    - utter_standby
-    - export
-## story_001
-* greet
-   - utter_greet
-* weather
-   - utter_ask_location
-* weather[location=London]
-   - slot{"location": "London"}
-   - action_weather
-* goodbye
-   - utter_standby
-## story_002
-* greet
-   - utter_greet
-* weather[location=Paris]
-   - slot{"location": "Paris"}
-   - action_weather
-* goodbye
-   - utter_standby 
-## story_003
-* greet
-   - utter_greet
-* weather
-   - utter_ask_location
-* weather[location=Vilnius]
-   - slot{"location": "Vilnius"}
-   - action_weather
-* goodbye
-   - utter_standby
-## story_004
-* greet
-   - utter_greet
-* weather[location=Italy]
-   - slot{"location": "Italy"}
-   - action_weather
-* goodbye
-   - utter_standby 
-## story_005
-* greet
-   - utter_greet
-* weather
-   - utter_ask_location
-* weather[location=Lithuania]
-   - slot{"location": "Lithuania"}
-   - action_weather
-* goodbye
-   - utter_standby
+ - utter_thanks
+ - utter_somethingelse
+* deny
+ - utter_standby 
 
+## story_affirm1
+* affirm
+ - utter_attention
 
+## story_affirm2
+* attention
+ - utter_attention
+* move[place=bathroom]
+- utter_move
+- utter_somethingelse
+
+## story_misc1
+- utter_somethingelse
+* deny
+- utter_standby 
+
+## story_misc2
+- utter_thanks
+- utter_somethingelse
+* affirm
+- utter_attention
+
+ ## story_misc2
+* greet
+ - utter_greet
+* reach{"object": "phone"}
+- slot{"object": "phone"}
+- utter_reach
+* thanks
+- utter_thanks
+- utter_somethingelse
+* deny
+- utter_standby 

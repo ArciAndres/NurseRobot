@@ -1,9 +1,15 @@
 {
     "python.pythonPath": "D:\\ProgramFiles\\Anaconda3\\envs\\envbot\\python.exe",
     "cSpell.words": [
+        "config",
         "core",
         "memoization",
         "nursenlu",
-        "rasa"
+        "rasa",
+        "ruamel",
+        "somethingelse",
+        "spacy",
+        "utter",
+        "wincl"
     ]
 }

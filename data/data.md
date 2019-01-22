@@ -1,5 +1,5 @@
-## intent:goodbye <!--- The label of the intent --> 
-- Bye 			<!--- Training examples for intent 'bye'--> 
+## intent:goodbye
+- Bye
 - Goodbye
 - See you later
 - Bye bot
@@ -21,7 +21,6 @@
 - Are you there?
 - hello is anybody there
 - Hey nurse
-- Hi nurse
 
 ## intent:greet
 - Hi
@@ -33,7 +32,6 @@
 - hi pal!
 - hi there
 - greetings
-- hello everybody
 - hello robot
 
 ## intent:thanks
@@ -60,6 +58,9 @@
 - for sure
 - yes yes yes
 - definitely
+- actually yes
+- yeah
+- yeah sure
 
 ## intent:deny
 - no
@@ -68,7 +69,7 @@
 - of course not
 - no thank you
 - no thanks
-- not for now.
+- not for now
 
 ## intent:joke
 - Can you tell me a joke?
@@ -77,24 +78,11 @@
 - A joke please
 - Tell me a joke please
 - I would like to hear a joke
-- I would loke to hear a joke, please
+- I would like to hear a joke, please
 - Can you tell jokes?
 - Please tell me a joke
 - I need to hear a joke
-
-## intent:weather
-- What's the weather in [Berlin](location) at the moment?()
-- What's the weather today?
-- What's the weather in [London](location) today?
-- Show me what's the weather in [Paris](location)
-- I wonder what is the weather in [Vilnius](location) right now?
-- Tell me the weather
-- What's the weather
-- I am going to [London](location) today and I wonder what is the weather out there?
-- I am planning my trip to [Amsterdam](location). What is the weather out there?
-- Show me the weather in [Dublin](location), please
-- [Roma](location)
-- The weather condition in [Italy](location)
+- I could hear a joke now
 
 ## intent:reach
 - Can you pass me the [book](object), please
@@ -114,3 +102,20 @@
 - Pass me the [phone](object)
 - Reach me the [comb](object)
 - Pass me the [comb](object)
+
+## intent:move
+- Can we go to the [living room](place)
+- Let's go to the [bedroom](place)
+- take me to the [kitchen](place)
+- take me to the [bathroom](place)
+- can we go to the [bathroom](place)
+- could you take me to the [bathroom](place)
+- help me to go to the [bathroom](place)
+- can you help me to go to the [bedroom](place)
+- let's go
+- take me there
+- let's go there
+- To the [kitchen](place)
+- To the [bathroom](place)
+- To my [bedroom](place)
+- The [bedroom](place)
