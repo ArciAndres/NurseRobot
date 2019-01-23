@@ -9,15 +9,23 @@ intents:
 - affirm
 - take
 - move
+- status
+- call
 
 entities:
 - object
 - place
+- status
+- callto
 
 slots:
   object:
     type: text
   place:
+    type: text
+  status:
+    type: text
+  callto:
     type: text
 
 actions:
@@ -26,10 +34,13 @@ actions:
 - utter_reach
 - utter_thanks
 - action_joke
+- action_status
 - utter_somethingelse
-- utter_attention
 - utter_move
 - utter_whereto
+- utter_askstatus
+- action_call
+- utter_attention
 
 templates:
   utter_attention:
@@ -71,3 +82,6 @@ templates:
   - text: Ok, let's go.
   - text: Sure, let me help you.
   - text: Sure, let's go.
+
+  utter_askstatus:
+  - text: How do you feel?

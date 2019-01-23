@@ -2,20 +2,25 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
+        "status",
+        "place",
         "object",
-        "place"
+        "callto"
       ]
     },
-    "utter_whereto": {
-      "slots": []
-    },
-    "utter_somethingelse": {
+    "action_call": {
       "slots": []
     },
     "utter_standby": {
       "slots": []
     },
-    "action_joke": {
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_somethingelse": {
+      "slots": []
+    },
+    "utter_whereto": {
       "slots": []
     },
     "utter_reach": {
@@ -24,7 +29,10 @@
     "utter_attention": {
       "slots": []
     },
-    "utter_greet": {
+    "utter_thanks": {
+      "slots": []
+    },
+    "action_status": {
       "slots": []
     }
   },
@@ -39,5 +47,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20190122-162437"
+  "trained_at": "20190123-093929"
 }

@@ -6,15 +6,20 @@ actions:
 - utter_reach
 - utter_thanks
 - action_joke
+- action_status
 - utter_somethingelse
-- utter_attention
 - utter_move
 - utter_whereto
+- utter_askstatus
+- action_call
+- utter_attention
 config:
   store_entities_as_slots: true
 entities:
 - object
 - place
+- status
+- callto
 forms: []
 intents:
 - reach:
@@ -37,7 +42,15 @@ intents:
     use_entities: true
 - move:
     use_entities: true
+- status:
+    use_entities: true
+- call:
+    use_entities: true
 slots:
+  callto:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   object:
     auto_fill: true
     initial_value: null
@@ -46,7 +59,13 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+  status:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
+  utter_askstatus:
+  - text: How do you feel?
   utter_attention:
   - text: Yes, How can I help you?
   - text: Yes, tell me. How can I be useful?

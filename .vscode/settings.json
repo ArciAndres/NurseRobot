@@ -1,6 +1,7 @@
 {
-    "python.pythonPath": "D:\\ProgramFiles\\Anaconda3\\envs\\envbot\\python.exe",
+    "python.pythonPath": "D:\\ProgramFiles\\Anaconda3\\envs\\bot\\python.exe",
     "cSpell.words": [
+        "callto",
         "config",
         "core",
         "memoization",

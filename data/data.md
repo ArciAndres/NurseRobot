@@ -2,18 +2,6 @@
 - Bye
 - Goodbye
 - See you later
-- Bye bot
-- Goodbye friend
-- bye
-- bye for now
-- catch you later
-- gotta go
-- See you
-- goodnight
-- have a nice day
-- i'm off
-- see you later alligator
-- we'll speak soon
 
 ## intent:attention
 - Nurse
@@ -27,9 +15,7 @@
 - Hello
 - Good morning
 - hi again
-- hi folks
-- hi Mister
-- hi pal!
+- hi
 - hi there
 - greetings
 - hello robot
@@ -119,3 +105,25 @@
 - To the [bathroom](place)
 - To my [bedroom](place)
 - The [bedroom](place)
+
+## intent:status
+- I [don't feel good](status)
+- I feel [pain](status)
+- Bad (status)
+- I am in [pain](status)
+
+## synonym:pain
+- don't feel good
+- bad
+- not great
+- not feeling good
+
+## intent:call
+- call the [doctor](callto)
+- call the [doctor](callto) please
+- call an [ambulance](callto)
+- call my [daughter](callto)
+- can you call the [doctor](callto) please
+- can you call an [ambulance](callto)
+- can you call my [son](callto) please
+- can you call my [daughter](callto) please

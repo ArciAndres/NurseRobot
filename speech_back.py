@@ -1,5 +1,4 @@
 import speech_recognition as sr
-from gtts import gTTS
 #quiet the endless 'insecurerequest' warning
 import urllib3
 import os
@@ -7,8 +6,6 @@ import win32com.client as wincl
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
  
-from pygame import mixer
-mixer.init()
 speak = wincl.Dispatch("SAPI.SpVoice")
 
 while (True == True):

@@ -48,3 +48,27 @@ class ActionJoke(Action):
 # request = json.loads(requests.get('https://api.chucknorris.io/jokes/random').text)  # make an api call
 # joke = request['value']  # extract a joke from returned json response
 # print(joke)
+
+class ActionStatus(Action):
+    def name(self):
+        return "action_status"        
+    def run(self, dispatcher, tracker, domain):
+        status = tracker.get_slot('status')
+        if status == 'pain':
+            dispatcher.utter_message("That's not good. Let me get some medicine, and I will call a human to verify your condition.")
+        if status == 'fine':
+            dispatcher.utter_message("I'm glad")
+        return[]
+
+class ActionCall(Action):
+    def name(self):
+        return "action_call"        
+    def run(self, dispatcher, tracker, domain):
+        callto = tracker.get_slot('callto')
+        if callto == 'doctor':
+            dispatcher.utter_message("I am calling the doctor right now.")
+        if callto == 'ambulance':
+            dispatcher.utter_message("It's an emergency! I am getting the closest ambulance for you now. Hold there!")
+        if (callto != 'doctor' and callto != 'ambulance'):
+            dispatcher.utter_message("Ok. I am calling your " + callto + " now.")
+        return []

@@ -112,6 +112,27 @@
 - utter_move
 - utter_somethingelse
 
+## story_status1
+- utter_askstatus
+* status[status:pain]
+- slot{"status":"pain"}
+- action_status
+
+## story_status2
+* attention
+- utter_attention
+* status[status:pain]
+- slot{"status":"pain"}
+- action_status
+* thanks
+- utter_thanks
+- utter_somethingelse
+
+## story_status3
+* status[status:pain]
+- slot{"status":"pain"}
+- action_status
+
 ## story_misc1
 - utter_somethingelse
 * deny
@@ -134,3 +155,47 @@
 - utter_somethingelse
 * deny
 - utter_standby 
+
+## story_call1
+* call[callto:doctor]
+- slot{"callto": "doctor"}
+- action_call
+
+## story_call2
+* call[callto:daughter]
+- slot{"callto": "daughter"}
+- action_call
+
+## story_call2
+* attention
+- utter_attention
+* call[callto:ambulance]
+- slot{"callto":"ambulance"}
+- action_call
+
+## story_call3
+* attention
+- utter_attention
+* call[callto:doctor]
+- slot{"callto":"doctor"}
+- action_call
+- utter_somethingelse
+
+## story_call4
+* greet
+- utter_greet
+* call[callto:son]
+- slot{"callto":"son"}
+- action_call
+- utter_somethingelse
+* deny
+- utter_standby
+
+## story_call5
+* attention
+- utter_attention
+* call[callto:ambulance]
+- slot{"callto":"ambulance"}
+- action_call
+* thanks
+- utter_thanks
