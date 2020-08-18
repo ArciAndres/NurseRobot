@@ -619,7 +619,7 @@
       },
       {
         "intent": "status",
-        "text": "Bad (status)"
+        "text": "[bad] (status)"
       },
       {
         "intent": "status",
@@ -632,6 +632,102 @@
           }
         ],
         "text": "I am in pain"
+      },
+      {
+        "intent": "status",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "hungry",
+            "entity": "status"
+          }
+        ],
+        "text": "I am hungry"
+      },
+      {
+        "intent": "status",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "hungry",
+            "entity": "status"
+          }
+        ],
+        "text": "I am really hungry"
+      },
+      {
+        "intent": "status",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "hungry",
+            "entity": "status"
+          }
+        ],
+        "text": "I'm hungry"
+      },
+      {
+        "intent": "status",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "hungry",
+            "entity": "status"
+          }
+        ],
+        "text": "I'm hungry"
+      },
+      {
+        "intent": "status",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "fine",
+            "entity": "status"
+          }
+        ],
+        "text": "I feel fine"
+      },
+      {
+        "intent": "status",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "good",
+            "entity": "status"
+          }
+        ],
+        "text": "I feel good"
+      },
+      {
+        "intent": "status",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Fine",
+            "entity": "status"
+          }
+        ],
+        "text": "Fine"
+      },
+      {
+        "intent": "status",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "ok",
+            "entity": "status"
+          }
+        ],
+        "text": "I'm ok"
       },
       {
         "intent": "call",
@@ -740,6 +836,13 @@
           "bad",
           "not great",
           "not feeling good"
+        ]
+      },
+      {
+        "value": "fine",
+        "synonyms": [
+          "good",
+          "ok"
         ]
       }
     ]

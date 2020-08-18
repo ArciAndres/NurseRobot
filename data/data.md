@@ -109,14 +109,25 @@
 ## intent:status
 - I [don't feel good](status)
 - I feel [pain](status)
-- Bad (status)
+- [bad] (status)
 - I am in [pain](status)
+- I am [hungry](status)
+- I am really [hungry](status)
+- I'm [hungry](status)
+- I'm [hungry](status)
+- I feel [fine](status)
+- I feel [good](status)
+- [Fine](status)
+- I'm [ok](status)
 
 ## synonym:pain
 - don't feel good
 - bad
 - not great
 - not feeling good
+## synonym:fine
+- good
+- ok
 
 ## intent:call
 - call the [doctor](callto)

@@ -5,14 +5,14 @@ actions:
 - utter_greet
 - utter_reach
 - utter_thanks
-- action_joke
-- action_status
 - utter_somethingelse
 - utter_move
 - utter_whereto
 - utter_askstatus
-- action_call
 - utter_attention
+- action_joke
+- action_call
+- action_status
 config:
   store_entities_as_slots: true
 entities:
@@ -81,7 +81,7 @@ templates:
   - text: Sure, let's go.
   utter_reach:
   - text: Sure! Here it is.
-  - text: Of course! There you go.
+  - text: Of course! Here it is.
   - text: Absolutely. Here it is.
   utter_somethingelse:
   - text: Do you need anything else?

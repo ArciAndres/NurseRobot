@@ -28,13 +28,13 @@
     "prev_utter_greet",
     "prev_utter_reach",
     "prev_utter_thanks",
-    "prev_action_joke",
-    "prev_action_status",
     "prev_utter_somethingelse",
     "prev_utter_move",
     "prev_utter_whereto",
     "prev_utter_askstatus",
+    "prev_utter_attention",
+    "prev_action_joke",
     "prev_action_call",
-    "prev_utter_attention"
+    "prev_action_status"
   ]
 }

@@ -2,5 +2,7 @@
   "don't feel good": "pain",
   "bad": "pain",
   "not great": "pain",
-  "not feeling good": "pain"
+  "not feeling good": "pain",
+  "good": "fine",
+  "ok": "fine"
 }

@@ -3,7 +3,4 @@
     "pipeline":"spacy_sklearn",
     "data":"/data/data.md",
     "entity_synonyms": null
-
-
-    
 }

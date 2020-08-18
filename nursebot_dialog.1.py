@@ -28,25 +28,35 @@ logger = logging.getLogger(__name__)
 speak = wincl.Dispatch("SAPI.SpVoice")
 nlp = spacy.load('en')
 phrases = []
+
+# Declare paths
+domain_file = './nurse_domain.yml'
+model_path = './models/dialogue'
 interpreter_path ='./models/nursebot/interpreter'
+training_data_file = './data/stories.md'
+conf_file = './config_spacy.json
 
-def train_dialogue(train = True,domain_file = 'nurse_domain.yml',
-					model_path = './models/dialogue',
-					training_data_file = './data/stories.md'):
-	if(train == True):
-		agent = Agent(domain_file, policies = [MemoizationPolicy(), KerasPolicy(max_history=3, epochs=200, batch_size=50)])
-		data = agent.load_data(training_data_file)	
-		agent.train(data)
-		agent.visualize("data/stories.md",output_file="graph.html", max_history=2)
-		agent.persist(model_path)
-		return agent
+action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
+interpreter = RasaNLUInterpreter(interpreter_path)
+agent = Agent.load('./models/dialogue', interpreter=interpreter, action_endpoint=action_endpoint)
 
-def saveDependencyGraph(phrase,saveImages = True):
-	phrases.append(nlp(phrase))
-	html = displacy.render(phrases, style='dep', page=True)
-	#svg = displacy.render(doc, style='dep')
-	#output_path = Path('/images/sentence.html')
-	#output_path.open('w', encoding='utf-8').write(html)
+# def train_dialogue(train = True,domain_file = 'nurse_domain.yml',
+# 					model_path = './models/dialogue',
+# 					training_data_file = './data/stories.md'):
+# 	if(train == True):
+# 		agent = Agent(domain_file, policies = [MemoizationPolicy(), KerasPolicy(max_history=3, epochs=200, batch_size=50)])
+# 		data = agent.load_data(training_data_file)	
+# 		agent.train(data)
+# 		agent.visualize("data/stories.md",output_file="graph.html", max_history=2)
+# 		agent.persist(model_path)
+# 		return agent
+
+# def saveDependencyGraph(phrase,saveImages = True):
+# 	phrases.append(nlp(phrase))
+# 	html = displacy.render(phrases, style='dep', page=True)
+# 	#svg = displacy.render(doc, style='dep')
+# 	#output_path = Path('/images/sentence.html')
+# 	#output_path.open('w', encoding='utf-8').write(html)
 
 def run_nurse_bot(serve_forever=True):
 	RasaNLUInterpreter(interpreter_path)	action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
