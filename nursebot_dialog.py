@@ -26,7 +26,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' #To ignore Tensorflow AVX AVX2 bonary w
 
 logger = logging.getLogger(__name__)
 speak = wincl.Dispatch("SAPI.SpVoice")
-nlp = spacy.load('en')
+nlp = spacy.load('en_core_web_sm')
 phrases = []
 interpreter_path ='./models/nursebot/interpreter'
 
@@ -35,9 +35,9 @@ def train_dialogue(train = True,domain_file = 'nurse_domain.yml',
 					training_data_file = './data/stories.md'):
 	if(train == True):
 		agent = Agent(domain_file, policies = [MemoizationPolicy(), KerasPolicy(max_history=3, epochs=200, batch_size=50)])
-		data = agent.load_data(training_data_file)	
+		data = agent.load_data(training_data_file)
 		agent.train(data)
-		agent.visualize("data/stories.md",output_file="graph.html", max_history=2)
+		#agent.visualize("data/stories.md",output_file="graph.html", max_history=2)
 		agent.persist(model_path)
 		return agent
 
@@ -49,7 +49,8 @@ def saveDependencyGraph(phrase,saveImages = True):
 	#output_path.open('w', encoding='utf-8').write(html)
 
 def run_nurse_bot(serve_forever=True):
-	RasaNLUInterpreter(interpreter_path)	action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
+	interpreter = RasaNLUInterpreter(interpreter_path)
+	action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
 	agent = Agent.load('./models/dialogue', interpreter=interpreter, action_endpoint=action_endpoint)
 	print("[INFO] The nurse is ready to listen. Please start a dialog... (Type 'stop' to quit)")
 	while serve_forever:
@@ -68,7 +69,7 @@ def run_nurse_bot(serve_forever=True):
 		#rasa_core.run.serve_application(agent ,channel='cmdline')
 
 if __name__ == '__main__':
-	#train_dialogue(False)
+	#train_dialogue(True)
 	run_nurse_bot(True)
 
 #Code to display stories

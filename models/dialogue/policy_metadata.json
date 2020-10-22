@@ -2,37 +2,37 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "object",
-        "status",
         "place",
-        "callto"
+        "object",
+        "callto",
+        "status"
       ]
     },
-    "utter_reach": {
-      "slots": []
-    },
     "utter_standby": {
-      "slots": []
-    },
-    "action_status": {
-      "slots": []
-    },
-    "utter_somethingelse": {
-      "slots": []
-    },
-    "action_call": {
       "slots": []
     },
     "utter_greet": {
       "slots": []
     },
-    "action_joke": {
+    "utter_somethingelse": {
       "slots": []
     },
     "utter_whereto": {
       "slots": []
     },
+    "action_call": {
+      "slots": []
+    },
+    "utter_reach": {
+      "slots": []
+    },
     "utter_attention": {
+      "slots": []
+    },
+    "action_joke": {
+      "slots": []
+    },
+    "action_status": {
       "slots": []
     },
     "utter_thanks": {
@@ -40,7 +40,7 @@
     }
   },
   "rasa_core": "0.12.4",
-  "python": "3.6.6",
+  "python": "3.6.10",
   "max_histories": [
     5,
     3
@@ -50,5 +50,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20190205-160708"
+  "trained_at": "20200817-212558"
 }

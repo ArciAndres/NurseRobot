@@ -58,9 +58,9 @@ class ActionStatus(Action):
             dispatcher.utter_message("That's not good. Let me get some medicine, and I will call a human to verify your condition.")
         if status == 'fine':
             dispatcher.utter_message("I'm glad")
-        if status == 'hungry'
+        #if status == 'hungry'
             
-        return[]
+        return []
 
 class ActionCall(Action):
     def name(self):
